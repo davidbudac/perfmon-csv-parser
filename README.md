@@ -1,6 +1,6 @@
 # Perfmon CSV Parser
 
-A simple script to transforms CSV output files from Perfmon collector into a dimension/measure model and write to another CSV.
+A simple script to transform CSV output files from Perfmon collector into a dimension/measure model and write to another CSV.
 
 ### Installation
 
