@@ -26,7 +26,7 @@ pip3 install -r requirements.txt
 ### Usage Example
 
 ```bash
-python3 parse_perfmon_csv.py ./DISCS_PROD_DataCollector.csv ./Output_DataCollector.csv -f "2019-01-15 00:00:00" -t "2019-01-16 00:00:00"
+$ python3 parse_perfmon_csv.py ./DISCS_PROD_DataCollector.csv ./Output_DataCollector.csv -f "2019-01-15 00:00:00" -t "2019-01-16 00:00:00"
 ```
 
 **Parameters**
