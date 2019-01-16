@@ -16,6 +16,9 @@ def debugPrint(text):
 def infoPrint(text):
     print("[INFO]: " + text)
 
+def fatalPrint (text, errCode):
+    sys.stderr.write("[FATAL]: " + text + "\n")
+    sys.exit(errCode)
 
 # override argparse error method to display full help message on error
 class DefaultHelpParser(argparse.ArgumentParser):
@@ -35,7 +38,8 @@ ap.add_argument("-df", "--dateformat", help="custom date format, default = yyyy-
 
 args = ap.parse_args()
 
-getattr(args, "inputCSV")
+if getattr(args, "inputCSV") == getattr(args, "outputCSV"):
+    fatalPrint ("Input filename and Output filename cannot be the same." ,3)
 
 # TODO
 # - accept as input parameters:
