@@ -52,3 +52,4 @@ optional arguments:
 **TODO**
 - add a complete example walkthrough and intended output
 - add a plotly usage example
+- add an option to resample the dataset by time dimension (and reduce it in size)
