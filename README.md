@@ -23,7 +23,7 @@ pip3 install -r requirements.txt
 - the dataset is rotated by 90 degrees: new column `value` contains all the metric values
 
 
-### Example Usage
+### Usage Example
 
 ```bash
 python3 parse_perfmon_csv.py ./DISCS_PROD_DataCollector.csv ./Output_DataCollector.csv -f "2019-01-15 00:00:00" -t "2019-01-16 00:00:00"
@@ -48,3 +48,7 @@ optional arguments:
                         custom date format, default = yyyy-mm-dd hh24:mi:ss
                         (default: %Y-%m-%d %H:%M:%S)
 ```
+
+**TODO**
+- add a complete example walkthrough and intended output
+- add a plotly usage example
