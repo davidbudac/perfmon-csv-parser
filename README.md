@@ -19,7 +19,7 @@ pip3 install -r requirements.txt
 **Transformations**
 - the column containing timestamp is renamed to `timestamp`, so the resulting dataset can be combined with datasets from other sources (i.e. other servers with different settings)
 - hostname is stripped from the metric names
-- if a metric's name contains a drive letter ("C:"), it is stripped from the metric name and added to a new column `volume`
+- if a metric's name contains a drive letter ("C:"), it is stripped from the metric name and moved to a new column `volume`
 - the dataset is rotated by 90 degrees: new column `value` contains all the metric values
 
 
